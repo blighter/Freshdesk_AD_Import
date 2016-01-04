@@ -14,3 +14,8 @@ Installation:
 
 Executing:
 - Navigate to /import.php?email=youremail@domain.com
+- Any errors will be displayed in the browser and logged to /log.txt
+
+Coming Soon:
+- Bulk Import
+- User selection by OU/filters
