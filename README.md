@@ -1,4 +1,4 @@
-# Freshdesk_AD_Import
+# Freshdesk Active Directory Importer
 Import users into Freshdesk from Active Directory
 Tested with Apache 2.4.4 with PHP 5.6.3
 
