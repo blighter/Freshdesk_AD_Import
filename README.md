@@ -20,3 +20,12 @@ Executing:
 Coming Soon:
 - Bulk Import
 - User selection by OU/filters
+- Support for custom Freshdesk fields
+
+Bulk Import
+For now you could do a bulk import by using a batch script:
+- Create a one column CSV with email addresses of your users
+- Use the below code in a .bat file
+- This is not recommended for >100 users
+
+for /f "usebackq tokens=1 delims=," %%a in ("csv.csv") do (start "" http://webserver/upload.php?email=%%a)
