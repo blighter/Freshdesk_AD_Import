@@ -11,6 +11,7 @@ Installation:
 - Copy import.php to your web server
 - Create a /images/ directory
 - Configure settings at the top of the PHP file
+- Create a customer field in Freshdesk named "Office"
 
 Executing:
 - Navigate to /import.php?email=youremail@domain.com
