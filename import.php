@@ -44,6 +44,8 @@
 	function authenticate($user, $password, $email_add) {
 		global $ldap_host, $ldap_usr_dom, $ldap_dn, $ldap_username, $ldap_password;
 		$ldap = ldap_connect($ldap_host);
+		ldap_set_option ($ldap, LDAP_OPT_REFERRALS, 0);
+		ldap_set_option($ldap, LDAP_OPT_PROTOCOL_VERSION, 3);
 		if($bind = @ldap_bind($ldap, $user . $ldap_usr_dom, $password)) {
 			$filter = "(mail=" . $email_add . ")";
 			$attr = array("displayName", "company", "sn", "givenName", "title", "mobile", "telephoneNumber", "physicalDeliveryOfficeName","thumbnailphoto","mail");
